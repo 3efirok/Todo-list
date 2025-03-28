@@ -1,0 +1,126 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #ddddbb;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.App {
+    text-align: center;
+}
+.TodoForm {
+    width: 100%;
+    margin-bottom: 1rem;
+}
+h1 {
+    border: 2px solid #5a1e02;
+    background-color: #c0a16b;
+    color: black;
+    margin: 0;
+    padding: 0;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border-radius: 20px 20px 0 0;
+    font-family: monospace, monospace;
+}
+.todo-wrapper {
+    width: 500px;
+    background-color: #f2f2a2;
+    border-radius: 20px 20px 20px 20px;
+    align-items: center;
+    padding-bottom: 20px;
+}
+.todo-input {
+    height: 37px;
+    outline: none;
+    background: #c0a16b;
+    border: 2px solid #5a1e02;
+    padding: 0.5rem 1rem;
+    margin-top: 1rem;
+    margin-bottom: 10px;
+    width: 400px;
+    color: black;
+}
+
+.todo-input::placeholder {
+    color: #953800;
+}
+
+.todo-btn {
+
+    background: #c0a16b;
+    color: black;
+    border: 2px solid #5a1e02;
+    padding: 0.55rem;
+    cursor: pointer;
+    border-radius: 0 20px 20px 0;
+    border-left: none;;
+}
+.todo-btn:hover {
+    background-color: #5a1e02;
+    color: #f2f2a2;
+    transform: scale(1.05);
+}
+.TodoWrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    padding-bottom: 20px;
+}
+
+.todo {
+    background-color: #f2cc60;
+    display: flex;
+    margin: 15px;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.6rem 0.8rem;
+    border-radius: 5px;
+    word-wrap: break-word; /* Додає перенесення слів */
+    overflow-wrap: break-word;
+}
+
+.todo p {
+    white-space: normal; /* Дозволяє тексту переноситися */
+    word-break: break-word; /* Переносить слова, якщо вони не вміщаються */
+    max-width: 80%;
+    width: 380px;
+    max-width: 380px;
+    display: flex;
+
+}
+.FontAwesomeIcon {
+    display: flex;
+}
+.icon-container {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 4px;
+    border: 2px solid transparent;
+    border-radius: 6px;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+.icon-container:hover {
+    background-color: rgba(255, 244, 164, 0.2);
+}
+.incompleted {
+    color: #fff;
+    cursor: pointer;
+}
+
+.completed {
+
+    color:;
+    text-decoration: line-through;
+    cursor: pointer;
+}
+
